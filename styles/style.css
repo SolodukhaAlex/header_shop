@@ -34,7 +34,7 @@ header ul a{
     color:#434f61;
 }
 .subcategory_menu_description img{
-    width: 10%;
+    width: auto;
     height: 50px;
     padding: 0 10px;
 }
@@ -48,12 +48,10 @@ header ul a{
     opacity: 0;
 }
 .subcategory_menu_description{
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
     width: 100%;
-    background: cyan;
     position:absolute;
-    top:30px;
+    top:29px;
     left:0;
     transition: .5s;
 }
@@ -95,6 +93,71 @@ header ul a{
     visibility: visible;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
+}
+.dropdown li{
+    display: flex;
+    position: relative;
+}
+.dropdown i{
+    position: absolute;
+    right: -10px;
+    top:23px;
+    font-size: 12px;
+    transition: .3s;
+    z-index: 2;
+}
+.dropdown li a
+{
+    z-index: 2;
+    padding: 10px;
+    margin: 5px;
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
+    opacity: .8;
+    transition: .3s;
+}
+.dropdown li a:hover
+{
+    opacity: 1;
+}
+.dropdown a:after {
+    position: absolute;
+    z-index: -999;
+    top: 2px;
+    left: 10px;
+    content: '';
+    width: 382.9px;
+    height: 94%;
+    background: transparent;
+    transition: .3s;
+}
+.dropdown li:hover .fa-chevron-right{
+    right: -15px;
+
+}
+.dropdown a:hover:after{
+    transition: .3s;
+    background: #f3f4f6;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    border-left: 1px solid rgba(0, 0, 0, .2);
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.description{
+    opacity: 0;
+    border: 1px solid rgba(0, 0, 0, .2);
+    transition: .3s;
+    z-index: 1;
+    width: 32%;
+    padding-left: 10px;
+    margin: 2px 0px 2px 17px;
+    background: #f3f4f6;
+}
+.hover_visible{
+    opacity: 1;
+}
+.most-popular-products{
+    width: 33%;
 }
 
 

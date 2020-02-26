@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="styles/style.css" class="stylesheet">
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Kurale&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/587a629f35.js" crossorigin="anonymous"></script>
 <body>
     <header>
         <div class="main_information">
@@ -21,14 +24,23 @@
                     <a class="menu_effects" href="#">Визитки</a>
                     <div class="subcategory_menu_description">
                         <ul class="dropdown">
-                            <li><a href="#">Стандартные (90 х 50)</a></li>
-                            <li><a href="#">Стандартные - скругление углов (90 х 50 )</a></li>
-                            <li><a href="#">Евро (85 х 55)</a></li>
-                            <li><a href="#">Квадратные (50 х 50)</a></li>
-                            <li><a href="#">Двойные вертикальные (90 х 100)</a></li>
-                            <li><a href="#">Двойные горизонтальные (180 х 50)</a></li>
+                            <li><a id="standard_cart" href="#">Стандартные (90 х 50)</a><i class="fas fa-chevron-right"></i></li>
+                            <li><a href="#">Стандартные - скругление углов (90 х 50 )</a><i class="fas fa-chevron-right"></i></li>
+                            <li><a href="#">Евро (85 х 55)</a><i class="fas fa-chevron-right"></i></li>
+                            <li><a href="#">Квадратные (50 х 50)</a><i class="fas fa-chevron-right"></i></li>
+                            <li><a href="#">Двойные вертикальные (90 х 100)</a><i class="fas fa-chevron-right"></i></li>
+                            <li><a href="#">Двойные горизонтальные (180 х 50)</a><i class="fas fa-chevron-right"></i></li>
                         </ul>
-                        <img src="images/logo.png" alt="123">
+                        <div class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Adipisci aliquid beatae, blanditiis consequatur dolores est
+                            expedita fuga labore laboriosam nam omnis perspiciatis porro
+                            praesentium sed sint ut vel vitae voluptate.
+                        </div>
+                        <div class="most-popular-products">
+                            <img src="images/logo.png" alt="123">
+                            <img src="images/logo.png" alt="123">
+                        </div>
                     </div>
                 </li>
                 <li class="main_category">
@@ -44,8 +56,14 @@
                 </li>
             </ul>
     </header>
+    <script src="js/jquery-3.4.1.min.js"></script>
+<script>
+    $('#standard_cart').hover(
+        function(){ $('.description').addClass('hover_visible') },
+        function(){ $('.description').removeClass('hover_visible') }
+    )
 
-
+</script>
 </body>
 </html>
 
