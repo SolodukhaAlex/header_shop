@@ -24,19 +24,35 @@
                     <a class="menu_effects" href="#">Визитки</a>
                     <div class="subcategory_menu_description">
                         <ul class="dropdown">
-                            <li><a id="standard_cart" href="#">Стандартные (90 х 50)</a><i class="fas fa-chevron-right"></i></li>
-                            <li><a href="#">Стандартные - скругление углов (90 х 50 )</a><i class="fas fa-chevron-right"></i></li>
-                            <li><a href="#">Евро (85 х 55)</a><i class="fas fa-chevron-right"></i></li>
-                            <li><a href="#">Квадратные (50 х 50)</a><i class="fas fa-chevron-right"></i></li>
-                            <li><a href="#">Двойные вертикальные (90 х 100)</a><i class="fas fa-chevron-right"></i></li>
-                            <li><a href="#">Двойные горизонтальные (180 х 50)</a><i class="fas fa-chevron-right"></i></li>
+                            <li><a id="standard_card" href="#">Стандартные (90 х 50)</a><i class="fas fa-chevron-right"></i></li>
+                            <li><a id="standard_card_border_radius" href="#">Стандартные - скругление углов (90 х 50 )</a><i class="fas fa-chevron-right"></i></li>
+                            <li><a id="euro_card" href="#">Евро (85 х 55)</a><i class="fas fa-chevron-right"></i></li>
+                            <li><a id="square_card" href="#">Квадратные (50 х 50)</a><i class="fas fa-chevron-right"></i></li>
+                            <li><a id="double_vertical_card" href="#">Двойные вертикальные (90 х 100)</a><i class="fas fa-chevron-right"></i></li>
+                            <li><a id="double_horizontal_card" href="#">Двойные горизонтальные (180 х 50)</a><i class="fas fa-chevron-right"></i></li>
                         </ul>
                         <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Adipisci aliquid beatae, blanditiis consequatur dolores est
-                            expedita fuga labore laboriosam nam omnis perspiciatis porro
-                            praesentium sed sint ut vel vitae voluptate.
+                            <div class="standard_card_desc">
+                                Визитная карточка – это компактный и в то же время действенный инструмент продвижения бизнес-дела. Она позволяет рассказать о вашей компании широкой аудитории, показать ее надежность и статусность, а также предложить ассортимент услуг и товаров потенциальным покупателям.
+                            </div>
+                            <div class="standard_card_border_radius_desc">
+                                Формат изделия 90х50 или 85х55 мм. Плотная мелованая матовая бумага плотностью 450 г/м2. Ручное скругление углов (1-4 шт). Печать полноцветная, с одной или двух сторон. Упаковка в коробочку. В 1 коробочке 96 штук визиток. Вес 1 комплекта визиток примерно 0,2 кг. Размер 1 коробочки визиток 95х55х45 мм.
+                            </div>
+                            <div class="euro_card_desc">
+                                Евровизитка – продукт нестандартный и непривычный для Украины. Визитки евростандарта - это не только способ быть оригинальным, это необходимость для сотрудников компании и частных лиц, выезжающих за рубеж и планирующих расширить круг знакомств и бизнес-контактов. Business Cards по евростандарту на иностранном языке заказывают бизнесмены и ученые, собирающиеся участвовать в международных выставках или симпозиумах.
+                            </div>
+                            <div class="square_card_desc">
+                                Квадратные визитки - это оригинально и незаурядно. Они вполне могут использоваться как элемент промо-кампании. Берите на заметку!
+                            </div>
+                            <div class="double_vertical_card_desc">
+                                Вертикальная визитка, имеет размер в развороте: 100*90 мм или 110*85 мм.
+                            </div>
+                            <div class="double_horizontal_card_desc">
+                                Горизонтальная визитка в развороте: 180*50 мм или 170*55 мм.
+                            </div>
+
                         </div>
+
                         <div class="most-popular-products">
                             <img src="images/logo.png" alt="123">
                             <img src="images/logo.png" alt="123">
@@ -58,10 +74,58 @@
     </header>
     <script src="js/jquery-3.4.1.min.js"></script>
 <script>
-    $('#standard_cart').hover(
-        function(){ $('.description').addClass('hover_visible') },
-        function(){ $('.description').removeClass('hover_visible') }
-    )
+    $('#standard_card').hover(
+        function(){ $('.standard_card_desc').addClass('hover_visible') },
+        function(){ $('.standard_card_desc').removeClass('hover_visible') }
+    );
+    $('#standard_card').hover(
+        function(){ $('.description').addClass('menu_hover_style') },
+        function(){ $('.description').removeClass('menu_hover_style') },
+    );
+
+    $('#standard_card_border_radius').hover(
+        function(){ $('.description').addClass('menu_hover_style') },
+        function(){ $('.description').removeClass('menu_hover_style') }
+    );
+    $('#standard_card_border_radius').hover(
+        function(){ $('.standard_card_border_radius_desc').addClass('hover_visible') },
+        function(){ $('.standard_card_border_radius_desc').removeClass('hover_visible') }
+    );
+    $('#euro_card').hover(
+        function(){ $('.description').addClass('menu_hover_style') },
+        function(){ $('.description').removeClass('menu_hover_style') }
+    );
+    $('#euro_card').hover(
+        function(){ $('.euro_card_desc').addClass('hover_visible') },
+        function(){ $('.euro_card_desc').removeClass('hover_visible') }
+    );
+
+    $('#square_card').hover(
+        function(){ $('.description').addClass('menu_hover_style') },
+        function(){ $('.description').removeClass('menu_hover_style') }
+    );
+    $('#square_card').hover(
+        function(){ $('.square_card_desc').addClass('hover_visible') },
+        function(){ $('.square_card_desc').removeClass('hover_visible') }
+    );
+    $('#double_vertical_card').hover(
+        function(){ $('.description').addClass('menu_hover_style') },
+        function(){ $('.description').removeClass('menu_hover_style') }
+    );
+    $('#double_vertical_card').hover(
+        function(){ $('.double_vertical_card_desc').addClass('hover_visible') },
+        function(){ $('.double_vertical_card_desc').removeClass('hover_visible') }
+    );
+    $('#double_horizontal_card').hover(
+        function(){ $('.description').addClass('menu_hover_style') },
+        function(){ $('.description').removeClass('menu_hover_style') }
+    );
+    $('#double_horizontal_card').hover(
+        function(){ $('.double_horizontal_card_desc').addClass('hover_visible') },
+        function(){ $('.double_horizontal_card_desc').removeClass('hover_visible') }
+    );
+
+
 
 </script>
 </body>
