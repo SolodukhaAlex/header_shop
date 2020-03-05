@@ -33,11 +33,6 @@ header ul a{
     text-decoration: none;
     color:#434f61;
 }
-.subcategory_menu_description img{
-    width: auto;
-    height: 50px;
-    padding: 0 10px;
-}
 .parent_categories{
     display: flex;
     position: relative;
@@ -142,12 +137,19 @@ header ul a{
     border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 .description{
+    font-size: 15px;
+    top: 100%;
     position: relative!important;
-
+    cursor: default;
     z-index: 1;
-    width: 32%;
+    width: 27%;
     padding-left: 10px;
     margin: 2px 0px 1.3px 9.2px;
+}
+.description *{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
 }
 .menu_hover_style{
     background: #f3f4f6;
@@ -158,7 +160,7 @@ header ul a{
     transition: .5s;
 }
 .most-popular-products{
-    width: 33%;
+    width: 41%;
 }
 
 .standard_card_desc,
@@ -173,6 +175,35 @@ header ul a{
     padding: 5px;
     opacity: 0;
     z-index: 2;
+}
+.most-popular-products h3{
+    text-align: center;
+    padding: 5px;
+    background: rgba(7, 170, 25, .2);
+    margin: 2px 0 2px 2px;
+}
+.items-most-popular{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 15px;
+}
+.item-most-popular img
+{
+    width: 100%;
+    padding: 10px 20px 0 10px;
+}
+.item-most-popular h4,
+.item-most-popular p{
+    padding: 0px 20px;
+    margin: 10px 0;
+}
+.item-most-popular h4{
+    margin: 0 0 5px;
+}
+.item-most-popular a{
+    padding: 10px 5px 10px 20px;
+    display: block;
 }
 
 
